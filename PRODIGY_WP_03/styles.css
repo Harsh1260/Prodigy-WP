@@ -1,0 +1,59 @@
+body {  
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+}
+
+#board {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #D3D3D3;
+    background-color: #F5F5F5;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: #FFFFE0;
+}
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#restartButton, #toggleModeButton {
+    height: 40px;
+    width: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#restartButton:hover, #toggleModeButton:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.winning-square {
+    background-color: #90EE90 !important;
+}
